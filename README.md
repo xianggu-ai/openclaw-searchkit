@@ -1,5 +1,7 @@
 # OpenClaw SearchKit
 
+[简体中文](README.zh-CN.md)
+
 Search orchestration toolkit for OpenClaw and other agentic workflows.
 
 It combines three layers:
