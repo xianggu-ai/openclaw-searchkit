@@ -1,0 +1,33 @@
+{
+  "name": "agent-web-search-orchestrator",
+  "version": "0.1.0",
+  "description": "Provider-agnostic multi-round web search orchestration for agentic workflows.",
+  "type": "module",
+  "bin": {
+    "agent-web-search": "./bin/agent-web-search.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "benchmark",
+    "README.md",
+    ".env.example",
+    "LICENSE"
+  ],
+  "scripts": {
+    "search": "node ./bin/agent-web-search.mjs",
+    "bench": "node ./benchmark/run-benchmark.mjs",
+    "check": "node --check ./src/index.mjs && node --check ./bin/agent-web-search.mjs && node --check ./benchmark/run-benchmark.mjs"
+  },
+  "keywords": [
+    "agent",
+    "search",
+    "orchestrator",
+    "retrieval",
+    "web-search"
+  ],
+  "license": "MIT"
+}

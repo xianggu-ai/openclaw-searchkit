@@ -1,0 +1,38 @@
+[
+  {
+    "id": "docs-auto",
+    "name": "Official docs query",
+    "query": "OpenClaw web search Perplexity Sonar docs",
+    "provider": "auto",
+    "count": 5,
+    "rounds": 2,
+    "expect": {
+      "minResults": 1,
+      "anyDomainMatches": ["docs.perplexity.ai", "docs.openclaw.ai"]
+    }
+  },
+  {
+    "id": "troubleshoot-auto",
+    "name": "Troubleshooting query",
+    "query": "node fetch error not working",
+    "provider": "auto",
+    "count": 5,
+    "rounds": 2,
+    "expect": {
+      "minResults": 1,
+      "anyDomainMatches": ["stackoverflow.com"]
+    }
+  },
+  {
+    "id": "knowledge-auto",
+    "name": "Knowledge query",
+    "query": "OpenClaw overview",
+    "provider": "auto",
+    "count": 5,
+    "rounds": 2,
+    "expect": {
+      "minResults": 1,
+      "anyTitleIncludes": ["OpenClaw"]
+    }
+  }
+]
