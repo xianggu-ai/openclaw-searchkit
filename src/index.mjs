@@ -1,5 +1,5 @@
 /**
- * Provider-agnostic multi-round web search orchestrator.
+ * OpenClaw SearchKit: provider-agnostic multi-round web search orchestration.
  *
  * Default behavior:
  * - Round 1: run the seed query on the primary provider set
@@ -8,9 +8,9 @@
  * - Optionally extract top-page content for the best matches
  *
  * Compatible with the old interface:
- *   agent-web-search --query "AI news"
- *   agent-web-search --query "AI news" --provider tavily
- *   agent-web-search --query "AI news" --provider duckduckgo
+ *   openclaw-searchkit --query "AI news"
+ *   openclaw-searchkit --query "AI news" --provider tavily
+ *   openclaw-searchkit --query "AI news" --provider duckduckgo
  *
  * New options:
  *   --provider auto|tavily|searxng|jina-search|duckduckgo|github|stackexchange|mediawiki
@@ -60,7 +60,7 @@ import {
 export function usage() {
   console.error(
     [
-      'Usage: agent-web-search --query "search term" [options]',
+      'Usage: openclaw-searchkit --query "search term" [options]',
       "",
       "Options:",
       "  --provider <names>                  auto or a comma-list of providers",

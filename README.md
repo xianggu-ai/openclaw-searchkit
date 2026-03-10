@@ -1,6 +1,6 @@
-# Agent Web Search Orchestrator
+# OpenClaw SearchKit
 
-Provider-agnostic multi-round web search orchestration for agentic workflows.
+Search orchestration toolkit for OpenClaw and other agentic workflows.
 
 It combines three layers:
 
@@ -46,10 +46,10 @@ This package separates the orchestration layer from the provider layer so you ca
 ## Quick Start
 
 ```bash
-cd agent-web-search-orchestrator
+cd openclaw-searchkit
 cp .env.example .env
-node ./bin/agent-web-search.mjs --list-providers
-node ./bin/agent-web-search.mjs --query "OpenClaw web search Perplexity Sonar docs" --count 5
+node ./bin/openclaw-searchkit.mjs --list-providers
+node ./bin/openclaw-searchkit.mjs --query "OpenClaw web search Perplexity Sonar docs" --count 5
 ```
 
 The CLI auto-loads `.env` from the current working directory or the package root.
@@ -68,9 +68,9 @@ Typical setups:
 ## CLI Usage
 
 ```bash
-node ./bin/agent-web-search.mjs --query "node fetch error not working" --rounds 2
-node ./bin/agent-web-search.mjs --query "OpenClaw overview" --provider mediawiki
-node ./bin/agent-web-search.mjs --query "OpenClaw docs" --provider tavily,github
+node ./bin/openclaw-searchkit.mjs --query "node fetch error not working" --rounds 2
+node ./bin/openclaw-searchkit.mjs --query "OpenClaw overview" --provider mediawiki
+node ./bin/openclaw-searchkit.mjs --query "OpenClaw docs" --provider tavily,github
 ```
 
 Common options:
@@ -89,7 +89,7 @@ Common options:
 ## Library Usage
 
 ```js
-import { normalizeParams, orchestrateSearch } from "agent-web-search-orchestrator";
+import { normalizeParams, orchestrateSearch } from "openclaw-searchkit";
 
 const params = normalizeParams({
   query: "OpenClaw overview",

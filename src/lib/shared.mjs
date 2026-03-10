@@ -17,7 +17,7 @@ export const SEARXNG_ENGINES = (process.env.SEARXNG_ENGINES ?? "").trim();
 export const DEFAULT_TIMEOUT_MS = 20_000;
 export const DDG_HTML_URL = "https://html.duckduckgo.com/html/";
 export const JINA_READER_PREFIX = "https://r.jina.ai/";
-export const USER_AGENT = "agent-web-search-orchestrator/0.1.0";
+export const USER_AGENT = "openclaw-searchkit/0.1.0";
 
 export const STOP_WORDS = new Set([
   "a", "an", "and", "are", "as", "at", "be", "by", "for", "from", "how",

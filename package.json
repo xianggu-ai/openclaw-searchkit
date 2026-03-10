@@ -1,10 +1,10 @@
 {
-  "name": "agent-web-search-orchestrator",
+  "name": "openclaw-searchkit",
   "version": "0.1.0",
-  "description": "Provider-agnostic multi-round web search orchestration for agentic workflows.",
+  "description": "Search orchestration toolkit for OpenClaw and other agentic workflows.",
   "type": "module",
   "bin": {
-    "agent-web-search": "./bin/agent-web-search.mjs"
+    "openclaw-searchkit": "./bin/openclaw-searchkit.mjs"
   },
   "exports": {
     ".": "./src/index.mjs"
@@ -18,9 +18,9 @@
     "LICENSE"
   ],
   "scripts": {
-    "search": "node ./bin/agent-web-search.mjs",
+    "search": "node ./bin/openclaw-searchkit.mjs",
     "bench": "node ./benchmark/run-benchmark.mjs",
-    "check": "node --check ./src/index.mjs && node --check ./bin/agent-web-search.mjs && node --check ./benchmark/run-benchmark.mjs"
+    "check": "node --check ./src/index.mjs && node --check ./bin/openclaw-searchkit.mjs && node --check ./benchmark/run-benchmark.mjs"
   },
   "keywords": [
     "agent",
